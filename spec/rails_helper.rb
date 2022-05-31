@@ -8,12 +8,11 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'capybara/rails'
 
-begin
-  ActiveRecord::Migration.maintain_test_schema!
-rescue ActiveRecord::PendingMigrationError => e
-  puts e.to_s.strip
-  exit 1
-end
+include Warden::Test::Helpers
+Warden.test_mode!
+
+ActiveRecord::Migration.maintain_test_schema!
+
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.use_transactional_fixtures = false
