@@ -13,6 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'jquery-rails'
 gem 'pry'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 

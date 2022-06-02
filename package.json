@@ -1,5 +1,7 @@
 {
   "name": "time_tracker",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }
