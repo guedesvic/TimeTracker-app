@@ -1,0 +1,14 @@
+<tr>
+  <th>
+    <%= post.id %>
+  </th>
+  <th>
+    <%= "#{post.user.first_name} #{post.user.last_name}"%>
+  </th>
+  <th>
+    <%= post.date %>
+  </th>
+  <th>
+    <%= truncate(post.rationale) %>
+  </th>
+</tr>
