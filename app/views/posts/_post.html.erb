@@ -11,4 +11,8 @@
   <th>
     <%= truncate(post.rationale) %>
   </th>
+  <th>
+    <%= link_to 'Edit', edit_post_path(post), id: "edit_#{post.id}" %>
+  </th>
+</tr>
 </tr>
