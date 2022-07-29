@@ -2,7 +2,7 @@ class Post < ApplicationRecord
 
   belongs_to :user
 
-  validates_presence_of :date, :rationale
+  validates_presence_of :date, :rationale, :status
 
   enum status: {
     submitted: 0,
